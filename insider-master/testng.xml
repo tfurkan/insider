@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/taydogmus/IdeaProjects/insider-master">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.TC01_insider">
+                <methods>
+                    <include name="checkJobDetails"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
